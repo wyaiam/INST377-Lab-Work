@@ -36,3 +36,23 @@ function moveToPrevSlide() {
   }
   updateSlidePosition();
 }
+
+document.querySelector('#carousel_button--prev').addEventListener('mouseover', function() {
+  this.style.backgroundColor = "orange";
+  this.style.border = "1px solid green";
+});
+
+document.querySelector('#carousel_button--prev').addEventListener('mouseout', function() {
+  this.style.backgroundColor = "";
+  this.style.border = "";
+});
+
+document.querySelector('#carousel_button--next').addEventListener('mouseover', function() {
+  this.style.backgroundColor = "orange";
+  this.style.border = "1px solid green";
+});
+
+document.querySelector('#carousel_button--next').addEventListener('mouseout', function() {
+  this.style.backgroundColor = "";
+  this.style.border = "";
+});

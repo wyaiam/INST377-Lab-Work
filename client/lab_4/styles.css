@@ -134,7 +134,7 @@
   }
 
   .carousel {
-    overflow: hidden;
+    overflow: visible;
     max-width: 300px;
     position: relative;
   }
@@ -164,19 +164,19 @@
   }
 
   .carousel .carousel_actions button {
-    border-radius: 5px;
-    border: 0; 
+    border-radius: 4px;
+    border: 3px; 
     font-weight: bold; 
     cursor: pointer;
     width: 40px;
   }
 
   .carousel .carousel_actions button#carousel_button--prev {
-    margin-left: 20px;
+    margin-left: -40px;
   }
 
   .carousel .carousel_actions button#carousel_button--next {
-    margin-right: 20px;
+    margin-right: -40px;
   }
 
   /* Mobile Styles */
