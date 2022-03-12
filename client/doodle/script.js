@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   const doodler = document.createElement('div');
   let doodlerLeftSpace = 50;
-  let doodlerBottomSpace = 150;
+  let doodlerBottomSpace = 250;
   let isGameOver = false;
   let platformCount = 5;
   let platforms = [];
@@ -38,10 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function movePlatforms() {
+    if (doodlerBottomSpace > 200) {
+      platforms.forEach(platform => {
+        platform.bottom -= 4;
+        let visual = platform.visual;
+        visual.style.bottom = platform.bottom + 'px';
+      });
+    }
+  }
+
   function start() {
     if (!isGameOver) {
       createDoodler();
       createPlatforms();
+      setInterval(movePlatforms, 30);
     }
   }
   // attach to button
