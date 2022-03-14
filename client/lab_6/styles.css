@@ -78,7 +78,7 @@
     font-size: 17px;
   }
   
-  .form-row button {
+  .submit_button {
     font-size: 17px;
     text-align: center;
   
@@ -100,6 +100,10 @@
   
   .form-row button:active {
     background-color: #896B60;
+  }
+
+  ul {
+    list-style: none;
   }
   
     /* Mobile Styles */
@@ -130,4 +134,4 @@
         }
   
     }
-    
+  
