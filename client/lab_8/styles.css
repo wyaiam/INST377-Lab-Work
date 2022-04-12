@@ -12,7 +12,8 @@
     background-color: #D0C7C2;
   }
 
-  #map { height: 180px; }
+  #map { height: 180px; 
+  }
   
   /* Page Layout */
   .columns {
@@ -45,6 +46,10 @@
     border-radius: 3px;
     padding: 20px;
     margin: 30px;
+  }
+
+  .col_wide {
+    width: 500px;
   }
   
   .form-row {
