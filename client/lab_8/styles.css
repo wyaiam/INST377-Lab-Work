@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
+      ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    background-color: #D0C7C2;
+  }
+  
+  /* Page Layout */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 960px;
+    margin-top: 25px;
+  }
+  
+  .header {
+    background-color: #896B60;
+    border-radius: 3px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .col {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  .form-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type='text'] {
+    background-color: #F5F2EA;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .form-row label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+    
+  .legacy-form-row {
+    border: none;
+  }
+  
+  .legacy-form-row legend {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .submit_button {
+    font-size: 17px;
+    text-align: center;
+  
+    color: #FFFFFF;
+    background-color: #4A332D;
+  
+    border: none;
+    border-radius: 3px;
+  
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #6C4A3F;
+  }
+  
+  .form-row button:active {
+    background-color: #896B60;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+    /* Mobile Styles */
+    @media only screen and (max-width: 400px) {
+      .page {
+          width: 100%;
+          margin: 0 auto;
+        }
+  
+      }
+  
+    
+    /* Tablet Styles */
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
+      .page {
+          width: 100%;
+          margin: 0 auto;
+        }
+  
+  
+    }
+    
+    /* Desktop Styles */
+    @media only screen and (min-width: 961px) {
+      .page {
+          width: 100%;
+          margin: 0 auto;
+        }
+  
+    }
+  
