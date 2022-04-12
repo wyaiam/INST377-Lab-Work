@@ -42,9 +42,10 @@ async function mainEvent() { // the async keyword means we can make API requests
   const zipcode = document.querySelector('#zipcode');
   submit.style.display = 'none';
 
-  const results = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'); // This accesses some data from our API
-  const arrayFromJson = await results.json(); // This changes it into data we can use - an object
+  // const results = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'); // This accesses some data from our API
+  // const arrayFromJson = await results.json(); // This changes it into data we can use - an object
   // console.log(arrayFromJson);
+  let arrayFromJson = {data: []}; // TODO: Remove debug tool
 
   // This if statement is to prevent a race condition on data load
   if (arrayFromJson.length > 0) {
